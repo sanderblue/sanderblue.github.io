@@ -1,0 +1,23 @@
+{
+  "name": "Sander Blue",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sanderblue/sanderblue.github.io",
+  "authors": [
+    "Sander Blue"
+  ],
+  "description": "This is sanderblue.github.io.",
+  "main": "assets/css/main.css",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "sander",
+    "blue"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bourbon": "~4.0.2"
+  }
+}
