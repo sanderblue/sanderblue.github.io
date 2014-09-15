@@ -3,5 +3,93 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  height: 100%; }
+/**
+ * Font Faces
+ */
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/montserrat-font-family/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-font-family/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-font-family/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-font-family/montserrat-regular-webfont.ttf") format("truetype"), url("../fonts/montserrat-font-family/montserrat-regular-webfont.svg#Montserrat") format("svg"); }
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/montserrat-font-family/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-font-family/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-font-family/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-font-family/montserrat-bold-webfont.ttf") format("truetype"), url("../fonts/montserrat-font-family/montserrat-bold-webfont.svg#Montserrat-Bold") format("svg"); }
+/**
+ * Font Families
+ */
+/**
+ * Mixins
+ */
+body,
+a {
+  color: rgba(255, 255, 255, 0.8); }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  background: black; }
+
+a {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+  text-decoration: none; }
+  a:hover {
+    color: white; }
+
+.outer-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .outer-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.intro-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 5% auto 0 auto;
+  text-align: center; }
+
+.header-primary,
+.header-secondary,
+.header-tertiary {
+  padding-bottom: 20px; }
+
+.header-primary {
+  font-size: 42px; }
+
+.header-secondary {
+  font-size: 32px; }
+
+.header-tertiary {
+  font-size: 24px; }
+
+.main-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+
+.unordered-list-centered {
+  font-size: 18px;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0; }
+  .unordered-list-centered li {
+    line-height: 20px; }
+
+.projects-list-wrapper {
+  margin: 50px auto; }
+
+.footer {
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 0;
+  text-align: center; }

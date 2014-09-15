@@ -1,0 +1,21 @@
+/**
+ * Font Faces
+ */
+@include font-face('Montserrat', '../fonts/montserrat-font-family/montserrat-regular-webfont');
+@include font-face('Montserrat-Bold', '../fonts/montserrat-font-family/montserrat-bold-webfont');
+
+/**
+ * Font Families
+ */
+@mixin font-regular() {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/**
+ * Mixins
+ */
+@mixin font-size($size) { font-size: $size; }
+
+

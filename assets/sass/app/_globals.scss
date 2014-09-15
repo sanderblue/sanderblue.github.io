@@ -1,1 +1,80 @@
-html { height: 100%; }
+$fontColor: rgba(255, 255, 255, 0.8);
+$fontColorHover: rgba(255, 255, 255, 1);
+
+body,
+a {
+    color: $fontColor;
+}
+
+body {
+    @include font-regular();
+    @include font-size(14px);
+    background: rgba(0,0,0, 1);
+}
+
+a {
+    @include transition(color .25s ease);
+    text-decoration: none;
+
+    &:hover {
+        color: $fontColorHover;
+    }
+}
+
+.outer-container {
+    @include outer-container;
+}
+
+.intro-container {
+    width: 100%;
+    max-width: 720px;
+    margin: 5% auto 0 auto;
+    text-align: center;
+}
+
+.header-primary,
+.header-secondary,
+.header-tertiary {
+    padding-bottom: 20px;
+}
+
+.header-primary {
+    @include font-size(42px);
+}
+
+.header-secondary {
+    @include font-size(32px);
+}
+
+.header-tertiary {
+    @include font-size(24px);
+}
+
+.main-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.unordered-list-centered {
+    @include font-size(18px);
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+
+    li {
+        line-height: 20px;
+    }
+}
+
+.projects-list-wrapper {
+    margin: 50px auto;
+}
+
+.footer {
+    @include font-size(12px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 0;
+    text-align: center;
+}
