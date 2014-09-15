@@ -1,6 +1,4 @@
-bower_components
-bower_components/*
+.sass_cache
+.sass_cache/*
 node_modules
 node_modules/*
-sass_cache
-sass_cache/*
