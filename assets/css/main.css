@@ -63,7 +63,10 @@ a {
   padding-bottom: 20px; }
 
 .header-primary {
-  font-size: 42px; }
+  font-size: 32px; }
+  @media (min-width: 768px) {
+    .header-primary {
+      font-size: 48px; } }
 
 .header-secondary {
   font-size: 32px; }
@@ -80,10 +83,13 @@ a {
   text-align: center;
   padding: 10px 0; }
   .unordered-list-centered li {
-    line-height: 20px; }
+    padding: 6px 0; }
 
 .projects-list-wrapper {
   margin: 50px auto; }
+
+.project-item {
+  font-size: 22px; }
 
 .footer {
   font-size: 12px;

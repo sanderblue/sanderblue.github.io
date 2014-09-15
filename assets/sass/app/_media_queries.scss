@@ -1,0 +1,21 @@
+@mixin breakpoint($bp) {
+    @if $bp == iphone_portrait {
+        @media (min-width: 320px) { @content; }
+    }
+
+    @else if $bp == iphone_landscape {
+        @media (min-width: 568px) { @content; }
+    }
+
+    @else if $bp == ipad_portrait {
+        @media (min-width: 768px)  { @content; }
+    }
+
+    @else if $bp == ipad_landscape {
+        @media (min-width: 1024px)  { @content; }
+    }
+
+    @else if $bp == desktop {
+        @media (min-width: 1025px)  { @content; }
+    }
+}

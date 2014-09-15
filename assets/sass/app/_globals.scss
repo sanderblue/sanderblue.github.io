@@ -39,7 +39,11 @@ a {
 }
 
 .header-primary {
-    @include font-size(42px);
+    @include font-size(32px);
+
+    @include breakpoint(ipad_portrait) {
+        @include font-size(48px);
+    }
 }
 
 .header-secondary {
@@ -61,12 +65,16 @@ a {
     padding: 10px 0;
 
     li {
-        line-height: 20px;
+        padding: 6px 0;
     }
 }
 
 .projects-list-wrapper {
     margin: 50px auto;
+}
+
+.project-item {
+    @include font-size(22px);
 }
 
 .footer {
