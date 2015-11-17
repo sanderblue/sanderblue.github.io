@@ -19,6 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "bourbon": "~4.0.2",
-    "neat": "~1.6.0"
+    "neat": "~1.6.0",
+    "ajaxrequest": "*",
+    "Chart.js": "~1.0.2",
+    "requirejs": "~2.1.20"
   }
 }
