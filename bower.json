@@ -22,6 +22,7 @@
     "neat": "~1.6.0",
     "ajaxrequest": "*",
     "Chart.js": "~1.0.2",
-    "requirejs": "~2.1.20"
+    "requirejs": "~2.1.20",
+    "foundation": "~5.5.3"
   }
 }
